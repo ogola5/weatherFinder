@@ -2,13 +2,13 @@ const form = document.querySelector('.section-head form'),
   input = document.querySelector('.section-head input'),
   msg = document.querySelector('.section-head .msg'),
   list = document.querySelector('.city-array .cities'),
-  apiKey = '4d8fb5b93d4af21d66a2948710284366'
+  apiKey = '51dc1937422c7a9e10b29b48dbb673ef'
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
   let inputValue = input.value
 
-  // to add all searched cities to the list. First check if the city is already added, if not, proceed to add one
+  
   const listItems = list.querySelectorAll('.city-array .city')
   const listItemsArray = Array.from(listItems)
 
@@ -39,7 +39,7 @@ form.addEventListener('submit', (e) => {
     }
   }
 
-  // getting weather data
+  // fetching weather data
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${apiKey}&units=metric`
 
   fetch(url)
