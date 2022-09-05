@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 
 :root {
-  --bg_main: hsl(305, 8%, 28%);
-  --text_light: #white;
+  --bg_main: white;
+  --text_light: #fff;
   --text_med: #4a586e;
   --text_dark: #1e2432;
   --red: #ac0d27;
@@ -249,7 +249,7 @@ body {
 }
 
 .api {
-  background: blueviolet;
+  background: greenyellow;
   position: fixed;
   top: 0;
   left: 0;
