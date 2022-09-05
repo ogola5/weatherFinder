@@ -64,8 +64,7 @@ body {
   padding: 0 15px;
 }
 
-/* SECTION #1
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .section-head {
   color: var(--text_light);
 }
@@ -78,9 +77,10 @@ body {
 }
 
 .section-head form {
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
+
 }
 
 .section-head form input {
@@ -91,7 +91,7 @@ body {
 }
 
 .section-head form input::placeholder {
-  color: currentColor;
+  color: #c3112d;
 }
 
 .section-head form button {
@@ -117,15 +117,14 @@ body {
   min-height: 40px;
 }
 
-/* SECTION #2
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .city-array {
-  margin: 70px 0 20px;
+  margin: 100px 0 40px;
 }
 
 .city-array .cities {
   display: grid;
-  grid-gap: 32px 20px;
+  grid-gap: 40px 40px;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -139,14 +138,14 @@ body {
 
 .city-array .city::after {
   content: '';
-  width: 90%;
-  height: 50px;
+  width: 100%;
+  height: 70px;
   position: absolute;
   bottom: -12px;
   left: 5%;
   z-index: -1;
   opacity: 0.3;
-  border-radius: 20px;
+  border-radius: 30px;
   background: var(--text_light);
 }
 
