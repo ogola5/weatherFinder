@@ -73,8 +73,9 @@ form.addEventListener('submit', (e) => {
       li.innerHTML = innerMarkupResponse
       list.appendChild(li)
     })
+    //catching error
     .catch(() => {
-      msg.textContent = 'enter valid'
+      msg.textContent = 'enter valid city name!'
     })
 
   msg.textContent = ''
